@@ -1,0 +1,598 @@
+{
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "discover": "Découvrir",
+    "settings": "Paramètres",
+    "support": "Assistant IA",
+    "help": "Centre d'aide",
+    "newTrip": "Nouveau voyage"
+  },
+  "trip": {
+    "title": "Créateur de voyage",
+    "startBuilding": "Commencer à créer le voyage",
+    "addDestination": "Ajouter la prochaine destination",
+    "share": "Partager",
+    "save": "Sauvegarder",
+    "selectDestination": "Choisir une destination...",
+    "duration": "Durée (jours)",
+    "hotel": "Hôtel",
+    "activities": "Activités",
+    "weather": "Météo",
+    "visa": "Visa"
+  },
+  "summary": {
+    "title": "Résumé du voyage",
+    "destinations": "Destinations",
+    "totalDays": "Jours totaux",
+    "totalCost": "Coût total",
+    "perDay": "Par jour",
+    "hotels": "Hôtels",
+    "transport": "Transport",
+    "subtotal": "Sous-total",
+    "startDate": "Date de début du voyage"
+  },
+  "dashboard": {
+    "welcome": "Bon retour, John!",
+    "nextAdventure": "Prêt pour votre prochaine aventure? Votre voyage au Maroc part dans 45 jours.",
+    "voyagesCompleted": "Voyages Terminés",
+    "countriesVisited": "Pays Visités",
+    "memberSince": "Membre Depuis 2022",
+    "bookNewVoyage": "Réserver Nouveau Voyage",
+    "viewAllTrips": "Voir Tous les Voyages",
+    "nextTrip": "Suivant: Désert du Maroc",
+    "departureDate": "15 Mars, 2024",
+    "completedVoyages": "Voyages Terminés",
+    "sinceJoining": "Depuis l'adhésion en 2022",
+    "totalSpent": "Total Dépensé",
+    "lifetimeSpent": "À vie avec nous",
+    "nextVoyage": "Prochain Voyage",
+    "departingDate": "Départ le 15 Mars, 2024",
+    "myReservations": "Mes Réservations",
+    "upcomingVoyages": "voyages à venir programmés",
+    "sort": "Trier",
+    "destination": "Destination",
+    "departure": "Départ",
+    "amount": "Montant",
+    "status": "Statut",
+    "travelers": "Voyageurs",
+    "confirmed": "Confirmé",
+    "pending": "En attente",
+    "cancelled": "Annulé",
+    "completed": "Terminé",
+    "bookNewVoyage2": "Réserver nouveau voyage",
+    "voyageCalendar": "Calendrier des Voyages",
+    "activeVoyages": "voyages actifs",
+    "syncWithGoogle": "Synchroniser avec Google",
+    "syncing": "Synchronisation..."
+  },
+  "msg": {
+    "linkCopied": "Lien du voyage copié dans le presse-papiers ! 🎉",
+    "savedSuccessfully": "Voyage sauvegardé avec succès ! ✅",
+    "addDestinationFirst": "Veuillez ajouter au moins une destination à votre itinéraire avant de partager."
+  },
+  "common": {
+    "loading": "Chargement...",
+    "saving": "Sauvegarde...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "continue": "Continuer",
+    "back": "Retour",
+    "close": "Fermer"
+  },
+  "user": {
+    "credits": "Vos crédits",
+    "buyMore": "Acheter plus de crédits",
+    "profile": "Profil",
+    "notifications": "Notifications"
+  },
+  "credits": {
+    "title": "Acheter des crédits de voyage",
+    "subtitle": "Gérez le solde de votre compte et achetez des crédits supplémentaires",
+    "currentBalance": {
+      "title": "Solde actuel",
+      "available": "Crédits disponibles",
+      "usage": "Utilisation ce mois-ci",
+      "used": "utilisé",
+      "todayUsed": "Crédits utilisés aujourd'hui",
+      "dailyAverage": "Utilisation quotidienne moyenne",
+      "estimatedDays": "Jours restants estimés",
+      "todayUsedValue": "127 crédits",
+      "dailyAverageValue": "89 crédits",
+      "estimatedDaysValue": "14 jours"
+    },
+    "purchase": {
+      "title": "Acheter des crédits",
+      "processing": "Traitement...",
+      "purchase": "Acheter",
+      "mostPopular": "Le plus populaire",
+      "perThousand": "pour 1K crédits"
+    },
+    "packages": {
+      "starter": {
+        "name": "Pack de démarrage",
+        "description": "Parfait pour commencer"
+      },
+      "pro": {
+        "name": "Pack Pro",
+        "description": "Choix le plus populaire",
+        "bonus": "20% crédits bonus"
+      },
+      "premium": {
+        "name": "Pack Premium",
+        "description": "Pour les utilisateurs avancés",
+        "bonus": "30% crédits bonus"
+      },
+      "enterprise": {
+        "name": "Pack Entreprise",
+        "description": "Valeur maximale",
+        "bonus": "40% crédits bonus"
+      }
+    }
+  },
+  "help": {
+    "title": "Centre d'aide",
+    "subtitle": "Trouvez des réponses aux questions courantes et obtenez de l'aide",
+    "needHelp": {
+      "title": "Besoin d'aide immédiate?",
+      "subtitle": "Discutez avec notre assistant IA pour des réponses instantanées",
+      "button": "Discuter avec l'IA"
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "questions": {
+        "howToBook": {
+          "question": "Comment réserver un voyage?",
+          "answer": "Parcourez notre marketplace, sélectionnez un voyage et cliquez sur 'Réserver le voyage' pour commencer le processus de réservation. Vous pouvez personnaliser votre itinéraire et ajouter des services supplémentaires lors du checkout."
+        },
+        "paymentOptions": {
+          "question": "Quelles sont les options de paiement?",
+          "answer": "Nous acceptons toutes les principales cartes de crédit (Visa, Mastercard, American Express), les virements bancaires, PayPal et les méthodes de paiement numérique comme Apple Pay et Google Pay."
+        },
+        "customizeItinerary": {
+          "question": "Comment puis-je personnaliser mon itinéraire?",
+          "answer": "Utilisez notre outil de création de voyage pour créer des itinéraires personnalisés ou modifier ceux existants. Vous pouvez ajouter des activités, changer d'hébergement et ajuster les dates de voyage."
+        },
+        "whatsIncluded": {
+          "question": "Qu'est-ce qui est inclus dans le prix du voyage?",
+          "answer": "Les prix des voyages incluent généralement l'hébergement, le transport entre les destinations, les activités guidées et certains repas comme spécifié dans les détails de l'itinéraire."
+        },
+        "cancelModify": {
+          "question": "Puis-je annuler ou modifier ma réservation?",
+          "answer": "Oui, vous pouvez modifier ou annuler les réservations jusqu'à 14 jours avant le départ. Des frais d'annulation peuvent s'appliquer selon le timing et le type de voyage."
+        },
+        "contactGuide": {
+          "question": "Comment contacter mon guide de voyage?",
+          "answer": "Une fois votre réservation confirmée, vous recevrez les coordonnées de votre guide local et les numéros de support d'urgence 24h/24 et 7j/7."
+        }
+      }
+    },
+    "contact": {
+      "title": "Contactez notre équipe de support",
+      "liveChat": {
+        "title": "Chat en direct",
+        "description": "Discutez avec notre équipe de support",
+        "details": "Disponible 24h/24 et 7j/7 pour une aide instantanée",
+        "action": "Démarrer le chat"
+      },
+      "phone": {
+        "title": "Support téléphonique",
+        "description": "+1 (555) 123-4567",
+        "details": "Lun-Ven 9h-18h EST",
+        "action": "Appeler maintenant"
+      },
+      "email": {
+        "title": "Support par email",
+        "description": "support@tripify.com",
+        "details": "Réponse sous 24 heures",
+        "action": "Envoyer un email"
+      }
+    },
+    "resources": {
+      "guidelines": {
+        "title": "Guides de voyage",
+        "booking": {
+          "title": "Processus de réservation",
+          "description": "Guide étape par étape pour réserver votre voyage parfait"
+        },
+        "requirements": {
+          "title": "Exigences de voyage",
+          "description": "Exigences de visa, passeport et documentation"
+        }
+      },
+      "policies": {
+        "title": "Politiques et conditions",
+        "cancellation": {
+          "title": "Politique d'annulation",
+          "description": "Comprenez nos conditions d'annulation flexibles"
+        },
+        "privacy": {
+          "title": "Politique de confidentialité",
+          "description": "Comment nous protégeons et utilisons vos données personnelles"
+        }
+      }
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "subtitle": "Gérez vos préférences de notification et consultez l'activité récente",
+    "filters": {
+      "all": "Toutes",
+      "unread": "Non lues",
+      "read": "Lues"
+    },
+    "types": {
+      "all": "Tous les types",
+      "billing": "Facturation",
+      "usage": "Utilisation",
+      "system": "Système",
+      "feature": "Fonctionnalité",
+      "security": "Sécurité"
+    },
+    "actions": {
+      "markAllRead": "Marquer tout comme lu",
+      "deleteAll": "Supprimer tout",
+      "markRead": "Marquer comme lu",
+      "delete": "Supprimer"
+    },
+    "settings": {
+      "title": "Paramètres de notification",
+      "subtitle": "Choisissez comment vous souhaitez recevoir les notifications",
+      "email": {
+        "title": "Notifications par email",
+        "billing": "Mises à jour de facturation et de paiement",
+        "usage": "Alertes d'utilisation et limites",
+        "security": "Mises à jour de sécurité et de compte",
+        "system": "Maintenance du système",
+        "feature": "Nouvelles fonctionnalités et mises à jour"
+      },
+      "push": {
+        "title": "Notifications push",
+        "billing": "Mises à jour de facturation et de paiement",
+        "usage": "Alertes d'utilisation et limites",
+        "security": "Mises à jour de sécurité et de compte",
+        "system": "Maintenance du système",
+        "feature": "Nouvelles fonctionnalités et mises à jour"
+      }
+    },
+    "priority": {
+      "high": "Élevée",
+      "medium": "Moyenne",
+      "low": "Faible"
+    },
+    "messages": {
+      "paymentSuccessful": "Votre achat du Pack Pro de 39,99 $ a été traité avec succès. 5 000 crédits ont été ajoutés à votre compte.",
+      "lowCreditBalance": "Votre solde de crédits est faible (1 250 crédits restants). Envisagez d'acheter plus de crédits pour éviter l'interruption de service.",
+      "systemMaintenance": "La maintenance programmée a été terminée. Tous les services sont maintenant pleinement opérationnels avec des performances améliorées.",
+      "newFeature": "Nous avons ajouté des analyses avancées à votre tableau de bord. Découvrez les nouvelles fonctionnalités d'insights et de rapports.",
+      "loginNewDevice": "Nous avons détecté une connexion depuis un nouvel appareil (Chrome sur Windows). Si ce n'était pas vous, veuillez sécuriser votre compte immédiatement.",
+      "invoiceAvailable": "Votre facture mensuelle pour décembre 2024 est maintenant disponible au téléchargement dans votre section facturation."
+    },
+    "empty": {
+      "title": "Aucune notification",
+      "subtitle": "Vous êtes à jour ! Revenez plus tard pour les mises à jour."
+    }
+  },
+  "support": {
+    "title": "Assistant IA de support",
+    "subtitle": "Obtenez une aide instantanée avec notre assistant IA vocal",
+    "callStatus": {
+      "ready": "Prêt à se connecter",
+      "connecting": "Connexion...",
+      "connected": "Connecté",
+      "ended": "Appel terminé",
+      "failed": "Échec du démarrage de l'appel"
+    },
+    "controls": {
+      "startCall": "Démarrer l'appel vocal",
+      "endCall": "Terminer l'appel",
+      "mute": "Couper le son",
+      "unmute": "Rétablir le son",
+      "clearConversation": "Effacer la conversation"
+    },
+    "messages": {
+      "welcome": "Salut ! Je suis votre assistant IA de voyage. Comment puis-je vous aider aujourd'hui ?",
+      "microphoneMuted": "Microphone coupé",
+      "microphoneUnmuted": "Microphone rétabli",
+      "configurationError": "L'ID de l'assistant Vapi n'est pas configuré. Veuillez vérifier vos variables d'environnement.",
+      "callDuration": "Durée de l'appel"
+    },
+    "status": {
+      "listening": "Écoute...",
+      "processing": "Traitement...",
+      "speaking": "Parle...",
+      "idle": "Prêt"
+    }
+  },
+  "builder": {
+    "modal": {
+      "title": "Planifions votre aventure !",
+      "subtitle": "Parlez-nous de votre voyage pour obtenir des recommandations personnalisées",
+      "travelStyleHeader": "Style de voyage",
+      "interestsHeader": "Qu'est-ce qui vous intéresse ? (Sélectionnez plusieurs)",
+      "budgetLabel": "Budget (DZD) - Optionnel",
+      "budgetPlaceholder": "ex: 50000",
+      "durationLabel": "Durée (jours) - Optionnel",
+      "durationPlaceholder": "ex: 7",
+      "startDateLabel": "Date de début - Optionnel",
+      "startBuildingButton": "Commencer à construire mon voyage",
+      "skipButton": "Passer et commencer vide",
+      "validation": {
+        "selectInterest": "Veuillez sélectionner au moins un intérêt"
+      },
+      "travelStyles": {
+        "budget": {
+          "name": "Voyageur économique",
+          "description": "Hébergement de base, transport local"
+        },
+        "standard": {
+          "name": "Standard",
+          "description": "Hôtels confortables, transport mixte"
+        },
+        "premium": {
+          "name": "Premium",
+          "description": "Hôtels de luxe, transport privé"
+        },
+        "luxury": {
+          "name": "Luxe",
+          "description": "Centres de villégiature exclusifs, tout en première classe"
+        }
+      },
+      "interests": {
+        "adventure": "Aventure",
+        "culture": "Culture",
+        "food": "Nourriture",
+        "nature": "Nature",
+        "history": "Histoire",
+        "beaches": "Plages",
+        "nightlife": "Vie nocturne",
+        "shopping": "Shopping"
+      },
+      "form": {
+        "destination": "Où aimeriez-vous aller ?",
+        "destinationPlaceholder": "Rechercher des destinations...",
+        "startDate": "Quand aimeriez-vous commencer ?",
+        "duration": "Combien de temps dure votre voyage ?",
+        "durationUnit": "jours",
+        "interests": "Qu'est-ce qui vous intéresse ?",
+        "startPlanning": "Commencer la planification",
+        "skip": "Passer et explorer"
+      }
+    },
+    "quote": {
+      "subtotal": "Sous-total",
+      "totalFinal": "Total final",
+      "promoCode": "Code promo",
+      "apply": "Appliquer",
+      "discount": "Réduction",
+      "invalidPromoCode": "Code promo invalide.",
+      "promoApplied": "Code promo appliqué avec succès !"
+    },
+    "destination": {
+      "selectDestination": "Sélectionner la destination",
+      "chooseDestination": "Choisir la destination...",
+      "duration": "Durée (jours)",
+      "hotel": "Hôtel",
+      "chooseHotel": "Choisir un hôtel...",
+      "activities": "Activités",
+      "weather": "Météo",
+      "visa": "Visa",
+      "loading": "Chargement...",
+      "unavailable": "Indisponible",
+      "addNextDestination": "Ajouter la prochaine destination"
+    },
+    "destinationPicker": {
+      "title": "Choisissez votre destination",
+      "subtitle": "Sélectionnez parmi {{count}} destinations incroyables dans le monde",
+      "searchPlaceholder": "Rechercher des destinations ou des pays...",
+      "allContinents": "Tous les continents",
+      "map": "Carte",
+      "list": "Liste",
+      "daysRecommended": "jours recommandés",
+      "description": "Description",
+      "popularActivities": "Activités populaires",
+      "bestTimeToVisit": "Meilleure période pour visiter",
+      "recommendedStay": "Séjour recommandé",
+      "days": "jours",
+      "selected": "Sélectionné",
+      "selectDestination": "Sélectionnez une destination pour continuer",
+      "cancel": "Annuler",
+      "confirmSelection": "Confirmer la sélection"
+    },
+    "transport": {
+      "flight": "Vol",
+      "train": "Train",
+      "car": "Voiture",
+      "bus": "Bus"
+    },
+    "tripHud": {
+      "tripSummary": "Résumé du voyage",
+      "tripStartDate": "Date de début du voyage",
+      "destinations": "Destinations",
+      "totalDays": "Jours totaux",
+      "avgDailyCost": "Coût quotidien moyen",
+      "breakdown": "Répartition des coûts",
+      "hotels": "Hôtels",
+      "nights": "nuits",
+      "transport": "Transport",
+      "subtotal": "Sous-total",
+      "promoCode": "Code promo",
+      "apply": "Appliquer",
+      "invalidCode": "Code promo invalide",
+      "discountApplied": "remise appliquée!",
+      "total": "Total",
+      "perDay": "Par jour",
+      "share": "Partager",
+      "save": "Sauvegarder",
+      "saving": "Sauvegarde...",
+      "shareSuccess": "Lien du voyage copié dans le presse-papiers! 🎉",
+      "saveSuccess": "Voyage sauvegardé avec succès! ✅"
+    },
+    "booking": {
+      "title": "Réservez votre voyage",
+      "summary": "Résumé du voyage",
+      "travelerInfo": "Informations du voyageur",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Numéro de téléphone",
+      "paymentInfo": "Informations de paiement",
+      "cardNumber": "Numéro de carte",
+      "expiryDate": "Date d'expiration",
+      "cvv": "CVV",
+      "billingAddress": "Adresse de facturation",
+      "address": "Adresse",
+      "city": "Ville",
+      "zipCode": "Code postal",
+      "country": "Pays",
+      "bookNow": "Réserver maintenant",
+      "totalAmount": "Montant total",
+      "processing": "Traitement...",
+      "close": "Fermer"
+    },
+    "page": {
+      "title": "Créateur de voyage",
+      "subtitle": "Concevez votre voyage parfait",
+      "controls": {
+        "save": "Sauvegarder le voyage",
+        "share": "Partager le voyage",
+        "reset": "Réinitialiser",
+        "addDestination": "Ajouter une destination",
+        "startDate": "Date de début du voyage",
+        "shareSuccess": "Voyage partagé avec succès ! Lien copié dans le presse-papiers.",
+        "saveSuccess": "Voyage sauvegardé avec succès !",
+        "saveError": "Échec de la sauvegarde du voyage. Veuillez réessayer.",
+        "saving": "Sauvegarde..."
+      }
+    }
+  },
+  "marketplace": {
+    "title": "Expériences de voyage extraordinaires",
+    "subtitle": "Rejoignez des aventures organisées dirigées par des experts locaux, ou construisez votre voyage parfait avec nos architectes de voyage personnalisés",
+    "exploreMap": "Explorer la carte",
+    "discoverMore": "Découvrir plus d'expériences",
+    "search": {
+      "placeholder": "Trouvez votre prochaine aventure par destination ou type d'expérience..."
+    },
+    "filters": {
+      "advanced": "Filtres avancés",
+      "title": "Options de filtre",
+      "resetAll": "Tout réinitialiser",
+      "location": "Lieu",
+      "selectCountry": "Sélectionner un pays",
+      "allCountries": "Tous les pays",
+      "duration": "Durée du voyage",
+      "selectDuration": "Sélectionner la durée",
+      "anyDuration": "Toute durée",
+      "short": "Court (1-3 jours)",
+      "medium": "Moyen (4-7 jours)",
+      "long": "Long (8+ jours)",
+      "minimumRating": "Note minimale",
+      "selectRating": "Sélectionner la note",
+      "anyRating": "Toute note",
+      "fourStars": "4+ Étoiles",
+      "fourHalfStars": "4,5+ Étoiles",
+      "fourEightStars": "4,8+ Étoiles",
+      "apply": "Appliquer les filtres"
+    },
+    "tabs": {
+      "allExperiences": "Toutes les expériences",
+      "expertLed": "Dirigé par des experts",
+      "buildYourOwn": "Construisez le vôtre"
+    },
+    "activeFilters": {
+      "search": "Recherche",
+      "country": "Pays",
+      "duration": "Durée",
+      "rating": "Note",
+      "stars": "étoiles",
+      "price": "Prix"
+    },
+    "results": {
+      "showing": "Affichage",
+      "of": "de",
+      "experiences": "expériences",
+      "filteredBy": "filtré par",
+      "criteria": "critères"
+    },
+    "noResults": {
+      "title": "Aucune expérience correspondante trouvée",
+      "description": "Essayez d'élargir votre recherche ou d'ajuster vos filtres pour trouver plus d'options",
+      "clearFilters": "Effacer tous les filtres"
+    }
+  },
+  "booking": {
+    "title": "Réservez votre voyage",
+    "steps": {
+      "idUpload": {
+        "title": "Télécharger le document d'identité",
+        "description": "Veuillez télécharger une pièce d'identité émise par le gouvernement pour vérification",
+        "documentLabel": "Document d'identité *",
+        "clickToUpload": "Cliquez pour télécharger",
+        "orDragDrop": "ou glissez-déposez",
+        "fileTypes": "PNG, JPG ou PDF (MAX. 10MB)"
+      },
+      "peopleCount": {
+        "title": "Combien de personnes?",
+        "description": "Sélectionnez le nombre de voyageurs pour ce voyage",
+        "label": "Nombre de personnes",
+        "placeholder": "Sélectionner le nombre de personnes",
+        "person": "Personne",
+        "people": "Personnes",
+        "specialRequests": "Demandes spéciales (Optionnel)",
+        "specialRequestsPlaceholder": "Restrictions alimentaires, besoins d'accessibilité ou occasions spéciales..."
+      },
+      "payment": {
+        "title": "Informations de paiement",
+        "description": "Entrez vos détails de paiement pour terminer la réservation"
+      }
+    },
+    "personalInfo": {
+      "firstName": "Prénom *",
+      "firstNamePlaceholder": "Jean",
+      "lastName": "Nom *",
+      "lastNamePlaceholder": "Dupont",
+      "email": "Adresse e-mail *",
+      "emailPlaceholder": "jean@exemple.com",
+      "phone": "Numéro de téléphone",
+      "phonePlaceholder": "+33 1 23 45 67 89"
+    },
+    "payment": {
+      "cardholderName": "Nom du titulaire de la carte *",
+      "cardholderNamePlaceholder": "Jean Dupont",
+      "cardNumber": "Numéro de carte *",
+      "cardNumberPlaceholder": "1234 5678 9012 3456",
+      "expiryDate": "Date d'expiration *",
+      "expiryDatePlaceholder": "MM/AA",
+      "cvv": "CVV *",
+      "cvvPlaceholder": "123",
+      "totalAmount": "Montant total",
+      "travelers": "voyageurs",
+      "securityNote": "Votre paiement est sécurisé avec un cryptage SSL 256 bits. Vous recevrez un e-mail de confirmation après un paiement réussi."
+    },
+    "priceBreakdown": {
+      "title": "Répartition des prix",
+      "taxesFees": "Taxes et frais",
+      "total": "Total"
+    },
+    "confirmation": {
+      "title": "Réservation confirmée!",
+      "subtitle": "Votre voyage a été réservé avec succès",
+      "detailsTitle": "Détails de la réservation",
+      "voyage": "Voyage",
+      "travelers": "Voyageurs",
+      "people": "personnes",
+      "totalPaid": "Total payé",
+      "bookingId": "ID de réservation",
+      "emailSent": "Un e-mail de confirmation a été envoyé à"
+    },
+    "buttons": {
+      "back": "Retour",
+      "close": "Fermer",
+      "continue": "Continuer",
+      "processing": "Traitement...",
+      "pay": "Payer",
+      "completeBooking": "Terminer la réservation"
+    }
+  }
+}

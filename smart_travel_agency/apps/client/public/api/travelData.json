@@ -1,0 +1,315 @@
+{
+  "destinations": [
+    {
+      "id": "paris-france",
+      "name": "Paris",
+      "country": "France",
+      "continent": "Europe",
+      "coordinates": { "lat": 48.8566, "lng": 2.3522 },
+      "description": "City of Light with iconic landmarks and romantic atmosphere",
+      "activities": [
+        "museums",
+        "dining",
+        "architecture",
+        "shopping",
+        "art",
+        "culture"
+      ],
+      "avgStayDays": 4,
+      "bestMonths": ["Apr", "May", "Sep", "Oct"],
+      "emoji": "🇫🇷",
+      "popularity": 5
+    },
+    {
+      "id": "london-uk",
+      "name": "London",
+      "country": "United Kingdom",
+      "continent": "Europe",
+      "coordinates": { "lat": 51.5074, "lng": -0.1278 },
+      "description": "Historic capital with royal palaces and modern culture",
+      "activities": [
+        "history",
+        "museums",
+        "theater",
+        "shopping",
+        "culture",
+        "royal sites"
+      ],
+      "avgStayDays": 3,
+      "bestMonths": ["May", "Jun", "Jul", "Aug", "Sep"],
+      "emoji": "🇬🇧",
+      "popularity": 5
+    },
+    {
+      "id": "dubai-uae",
+      "name": "Dubai",
+      "country": "United Arab Emirates",
+      "continent": "Asia",
+      "coordinates": { "lat": 25.2048, "lng": 55.2708 },
+      "description": "Futuristic city with luxury shopping and desert adventures",
+      "activities": [
+        "luxury",
+        "shopping",
+        "desert",
+        "nightlife",
+        "architecture",
+        "beaches"
+      ],
+      "avgStayDays": 4,
+      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar"],
+      "emoji": "🇦🇪",
+      "popularity": 4
+    },
+    {
+      "id": "tokyo-japan",
+      "name": "Tokyo",
+      "country": "Japan",
+      "continent": "Asia",
+      "coordinates": { "lat": 35.6762, "lng": 139.6503 },
+      "description": "Modern metropolis blending tradition with innovation",
+      "activities": [
+        "culture",
+        "food",
+        "technology",
+        "temples",
+        "shopping",
+        "anime"
+      ],
+      "avgStayDays": 5,
+      "bestMonths": ["Mar", "Apr", "May", "Oct", "Nov"],
+      "emoji": "🇯🇵",
+      "popularity": 5
+    },
+    {
+      "id": "istanbul-turkey",
+      "name": "Istanbul",
+      "country": "Turkey",
+      "continent": "Europe/Asia",
+      "coordinates": { "lat": 41.0082, "lng": 28.9784 },
+      "description": "Cultural bridge between Europe and Asia with rich history",
+      "activities": [
+        "history",
+        "culture",
+        "food",
+        "bazaars",
+        "architecture",
+        "museums"
+      ],
+      "avgStayDays": 3,
+      "bestMonths": ["Apr", "May", "Sep", "Oct"],
+      "emoji": "🇹🇷",
+      "popularity": 4
+    },
+    {
+      "id": "marrakech-morocco",
+      "name": "Marrakech",
+      "country": "Tlemcen",
+      "continent": "Africa",
+      "coordinates": { "lat": 31.6295, "lng": -7.9811 },
+      "description": "Imperial city with vibrant souks and desert gateway",
+      "activities": [
+        "culture",
+        "markets",
+        "desert",
+        "architecture",
+        "food",
+        "crafts"
+      ],
+      "avgStayDays": 3,
+      "bestMonths": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar"],
+      "emoji": "🇲🇦",
+      "popularity": 4
+    },
+    {
+      "id": "cairo-egypt",
+      "name": "Cairo",
+      "country": "Egypt",
+      "continent": "Africa",
+      "coordinates": { "lat": 30.0444, "lng": 31.2357 },
+      "description": "Ancient capital with pyramids and Nile River",
+      "activities": [
+        "history",
+        "archaeology",
+        "culture",
+        "museums",
+        "ancient sites",
+        "river cruises"
+      ],
+      "avgStayDays": 3,
+      "bestMonths": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar"],
+      "emoji": "🇪🇬",
+      "popularity": 4
+    },
+    {
+      "id": "algiers-algeria",
+      "name": "Algiers",
+      "country": "Algeria",
+      "continent": "Africa",
+      "coordinates": { "lat": 36.7538, "lng": 3.0588 },
+      "description": "White city overlooking the Mediterranean Sea",
+      "activities": [
+        "history",
+        "architecture",
+        "coastal",
+        "culture",
+        "museums",
+        "cafes"
+      ],
+      "avgStayDays": 2,
+      "bestMonths": ["Apr", "May", "Sep", "Oct", "Nov"],
+      "emoji": "🇩🇿",
+      "popularity": 3
+    },
+    {
+      "id": "oran-algeria",
+      "name": "Oran",
+      "country": "Algeria",
+      "continent": "Africa",
+      "coordinates": { "lat": 35.6969, "lng": -0.6331 },
+      "description": "Coastal port city with Spanish colonial architecture",
+      "activities": [
+        "coastal",
+        "architecture",
+        "music",
+        "culture",
+        "beaches",
+        "nightlife"
+      ],
+      "avgStayDays": 2,
+      "bestMonths": ["Apr", "May", "Jun", "Sep", "Oct"],
+      "emoji": "🇩🇿",
+      "popularity": 3
+    },
+    {
+      "id": "constantine-algeria",
+      "name": "Constantine",
+      "country": "Algeria",
+      "continent": "Africa",
+      "coordinates": { "lat": 36.365, "lng": 6.6147 },
+      "description": "City of bridges built on dramatic rocky outcrops",
+      "activities": [
+        "architecture",
+        "history",
+        "nature",
+        "bridges",
+        "photography",
+        "culture"
+      ],
+      "avgStayDays": 2,
+      "bestMonths": ["Apr", "May", "Sep", "Oct", "Nov"],
+      "emoji": "🇩🇿",
+      "popularity": 3
+    },
+    {
+      "id": "tamanrasset-algeria",
+      "name": "Tamanrasset",
+      "country": "Algeria",
+      "continent": "Africa",
+      "coordinates": { "lat": 22.7851, "lng": 5.5228 },
+      "description": "Gateway to the Sahara with Tuareg culture",
+      "activities": [
+        "desert",
+        "culture",
+        "adventure",
+        "nature",
+        "camping",
+        "stargazing"
+      ],
+      "avgStayDays": 3,
+      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar"],
+      "emoji": "🇩🇿",
+      "popularity": 2
+    },
+    {
+      "id": "new-york-usa",
+      "name": "New York",
+      "country": "United States",
+      "continent": "North America",
+      "coordinates": { "lat": 40.7128, "lng": -74.006 },
+      "description": "The city that never sleeps with iconic skyline",
+      "activities": [
+        "culture",
+        "museums",
+        "shopping",
+        "nightlife",
+        "theater",
+        "food"
+      ],
+      "avgStayDays": 4,
+      "bestMonths": ["Apr", "May", "Sep", "Oct", "Nov"],
+      "emoji": "🇺🇸",
+      "popularity": 5
+    }
+  ],
+  "hotels": [
+    {
+      "id": "budget",
+      "name": "Budget Hotel ★★",
+      "price": 45,
+      "amenities": ["WiFi", "Basic Room", "Reception"]
+    },
+    {
+      "id": "standard",
+      "name": "Standard Hotel ★★★",
+      "price": 85,
+      "amenities": ["WiFi", "Room Service", "Restaurant", "Fitness Center"]
+    },
+    {
+      "id": "premium",
+      "name": "Premium Hotel ★★★★",
+      "price": 150,
+      "amenities": [
+        "WiFi",
+        "Room Service",
+        "Restaurant",
+        "Spa",
+        "Pool",
+        "Concierge"
+      ]
+    },
+    {
+      "id": "luxury",
+      "name": "Luxury Hotel ★★★★★",
+      "price": 280,
+      "amenities": [
+        "WiFi",
+        "Butler Service",
+        "Fine Dining",
+        "Spa",
+        "Pool",
+        "Helicopter Transfer",
+        "Personal Shopper"
+      ]
+    }
+  ],
+  "transport": [
+    {
+      "id": "flight",
+      "name": "Flight",
+      "basePrice": 150,
+      "duration": "2-8 hours",
+      "icon": "✈️"
+    },
+    {
+      "id": "train",
+      "name": "Train",
+      "basePrice": 80,
+      "duration": "4-12 hours",
+      "icon": "🚂"
+    },
+    {
+      "id": "bus",
+      "name": "Bus",
+      "basePrice": 35,
+      "duration": "8-24 hours",
+      "icon": "🚌"
+    },
+    {
+      "id": "car",
+      "name": "Car Rental",
+      "basePrice": 60,
+      "duration": "variable",
+      "icon": "🚗"
+    }
+  ]
+}

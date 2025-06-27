@@ -1,0 +1,715 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "discover": "Discover",
+    "settings": "Settings",
+    "support": "AI Assistant",
+    "help": "Help Center",
+    "newTrip": "New trip"
+  },
+  "trip": {
+    "title": "Trip Builder",
+    "startBuilding": "Start Building Trip",
+    "addDestination": "Add Next Destination",
+    "share": "Share",
+    "save": "Save",
+    "selectDestination": "Choose destination...",
+    "duration": "Duration (days)",
+    "hotel": "Hotel",
+    "activities": "Activities",
+    "weather": "Weather",
+    "visa": "Visa"
+  },
+  "summary": {
+    "title": "Trip Summary",
+    "destinations": "Destinations",
+    "totalDays": "Total Days",
+    "totalCost": "Total Cost",
+    "perDay": "Per Day",
+    "hotels": "Hotels",
+    "transport": "Transport",
+    "subtotal": "Subtotal",
+    "startDate": "Trip Start Date"
+  },
+  "dashboard": {
+    "welcome": "Welcome back, John!",
+    "nextAdventure": "Ready for your next adventure? Your Tlemcen voyage departs in 45 days.",
+    "voyagesCompleted": "Voyages Completed",
+    "countriesVisited": "Countries Visited",
+    "memberSince": "Member Since 2022",
+    "bookNewVoyage": "Book New Voyage",
+    "viewAllTrips": "View All Trips",
+    "nextTrip": "Next: Tlemcen Desert",
+    "departureDate": "March 15, 2024",
+    "completedVoyages": "Completed Voyages",
+    "sinceJoining": "Since joining in 2022",
+    "totalSpent": "Total Spent",
+    "lifetimeSpent": "Lifetime with us",
+    "nextVoyage": "Next Voyage",
+    "departingDate": "Departing March 15, 2024",
+    "myReservations": "My Reservations",
+    "upcomingVoyages": "upcoming voyages scheduled",
+    "sort": "Sort",
+    "destination": "Destination",
+    "departure": "Departure",
+    "amount": "Amount",
+    "status": "Status",
+    "travelers": "Travelers",
+    "confirmed": "Confirmed",
+    "pending": "Pending",
+    "cancelled": "Cancelled",
+    "completed": "Completed",
+    "bookNewVoyage2": "Book new voyage",
+    "voyageCalendar": "Voyage Calendar",
+    "activeVoyages": "active voyages",
+    "syncWithGoogle": "Sync with Google",
+    "syncing": "Syncing..."
+  },
+  "msg": {
+    "linkCopied": "Trip link copied to clipboard! 🎉",
+    "savedSuccessfully": "Trip saved successfully! ✅",
+    "addDestinationFirst": "Please add at least one destination to your itinerary before sharing."
+  },
+  "common": {
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "close": "Close"
+  },
+  "user": {
+    "credits": "Your Credits",
+    "buyMore": "Buy More Credits",
+    "profile": "Profile",
+    "notifications": "Notifications"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account preferences and application settings",
+    "tabs": {
+      "general": "General",
+      "security": "Security",
+      "notifications": "Notifications",
+      "billing": "Billing",
+      "preferences": "Preferences"
+    },
+    "general": {
+      "profile": "Profile Information",
+      "personalInfo": "Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "language": "Language",
+      "timezone": "Timezone",
+      "currency": "Currency",
+      "saveChanges": "Save Changes",
+      "changesSaved": "Changes saved successfully!"
+    },
+    "security": {
+      "title": "Security Settings",
+      "changePassword": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "twoFactor": "Two-Factor Authentication",
+      "twoFactorDesc": "Add an extra layer of security to your account",
+      "enable": "Enable",
+      "disable": "Disable",
+      "sessions": "Active Sessions",
+      "loginHistory": "Login History",
+      "revokeAll": "Revoke All Sessions"
+    },
+    "billing": {
+      "title": "Billing & Subscription",
+      "currentPlan": "Current Plan",
+      "usage": "Usage This Month",
+      "paymentMethod": "Payment Method",
+      "addPaymentMethod": "Add Payment Method",
+      "billingHistory": "Billing History",
+      "invoices": "Invoices",
+      "download": "Download"
+    },
+    "preferences": {
+      "title": "Preferences",
+      "appearance": "Appearance",
+      "theme": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System",
+      "accessibility": "Accessibility",
+      "reduceMotion": "Reduce motion",
+      "highContrast": "High contrast",
+      "fontSize": "Font size",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large"
+    }
+  },
+  "credits": {
+    "title": "Buy Travel Credits",
+    "subtitle": "Manage your account balance and purchase additional credits",
+    "currentBalance": {
+      "title": "Current Balance",
+      "available": "Available Credits",
+      "usage": "Usage this month",
+      "used": "used",
+      "todayUsed": "Credits Used Today",
+      "dailyAverage": "Average Daily Usage",
+      "estimatedDays": "Estimated Days Remaining",
+      "todayUsedValue": "127 credits",
+      "dailyAverageValue": "89 credits",
+      "estimatedDaysValue": "14 days"
+    },
+    "purchase": {
+      "title": "Purchase Credits",
+      "processing": "Processing...",
+      "purchase": "Purchase",
+      "mostPopular": "Most Popular",
+      "perThousand": "per 1K credits"
+    },
+    "packages": {
+      "starter": {
+        "name": "Starter Pack",
+        "description": "Perfect for getting started"
+      },
+      "pro": {
+        "name": "Pro Pack",
+        "description": "Most popular choice",
+        "bonus": "20% bonus credits"
+      },
+      "premium": {
+        "name": "Premium Pack",
+        "description": "For power users",
+        "bonus": "30% bonus credits"
+      },
+      "enterprise": {
+        "name": "Enterprise Pack",
+        "description": "Maximum value",
+        "bonus": "40% bonus credits"
+      }
+    }
+  },
+  "help": {
+    "title": "Help Center",
+    "subtitle": "Find answers to common questions and get support",
+    "needHelp": {
+      "title": "Need immediate help?",
+      "subtitle": "Chat with our AI assistant for instant answers",
+      "button": "Chat with AI"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": {
+        "howToBook": {
+          "question": "How do I book a trip?",
+          "answer": "Browse our marketplace, select a trip, and click 'Book Journey' to start the booking process. You can customize your itinerary and add additional services during checkout."
+        },
+        "paymentOptions": {
+          "question": "What are the payment options?",
+          "answer": "We accept all major credit cards (Visa, Mastercard, American Express), bank transfers, PayPal, and digital payment methods like Apple Pay and Google Pay."
+        },
+        "customizeItinerary": {
+          "question": "How can I customize my itinerary?",
+          "answer": "Use our trip builder tool to create personalized itineraries or modify existing ones. You can add activities, change accommodations, and adjust travel dates."
+        },
+        "whatsIncluded": {
+          "question": "What's included in the trip price?",
+          "answer": "Trip prices typically include accommodation, transportation between destinations, guided activities, and some meals as specified in the itinerary details."
+        },
+        "cancelModify": {
+          "question": "Can I cancel or modify my booking?",
+          "answer": "Yes, you can modify or cancel bookings up to 14 days before departure. Cancellation fees may apply depending on the timing and trip type."
+        },
+        "contactGuide": {
+          "question": "How do I contact my travel guide?",
+          "answer": "Once your booking is confirmed, you'll receive contact details for your local guide and 24/7 emergency support numbers."
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact Our Support Team",
+      "liveChat": {
+        "title": "Live Chat",
+        "description": "Chat with our support team",
+        "details": "Available 24/7 for instant help",
+        "action": "Start Chat"
+      },
+      "phone": {
+        "title": "Phone Support",
+        "description": "+1 (555) 123-4567",
+        "details": "Mon-Fri 9AM-6PM EST",
+        "action": "Call Now"
+      },
+      "email": {
+        "title": "Email Support",
+        "description": "support@tripify.com",
+        "details": "Response within 24 hours",
+        "action": "Send Email"
+      }
+    },
+    "resources": {
+      "guidelines": {
+        "title": "Travel Guidelines",
+        "booking": {
+          "title": "Booking Process",
+          "description": "Step-by-step guide to booking your perfect trip"
+        },
+        "requirements": {
+          "title": "Travel Requirements",
+          "description": "Visa, passport, and documentation requirements"
+        }
+      },
+      "policies": {
+        "title": "Policies & Terms",
+        "cancellation": {
+          "title": "Cancellation Policy",
+          "description": "Understand our flexible cancellation terms"
+        },
+        "privacy": {
+          "title": "Privacy Policy",
+          "description": "How we protect and use your personal data"
+        }
+      }
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "subtitle": "Manage your notification preferences and view recent activity",
+    "filters": {
+      "all": "All",
+      "unread": "Unread",
+      "read": "Read"
+    },
+    "types": {
+      "all": "All Types",
+      "billing": "Billing",
+      "usage": "Usage",
+      "system": "System",
+      "feature": "Feature",
+      "security": "Security"
+    },
+    "actions": {
+      "markAllRead": "Mark All as Read",
+      "deleteAll": "Delete All",
+      "markRead": "Mark as Read",
+      "delete": "Delete"
+    },
+    "settings": {
+      "title": "Notification Settings",
+      "subtitle": "Choose how you want to receive notifications",
+      "email": {
+        "title": "Email Notifications",
+        "billing": "Billing & Payment Updates",
+        "usage": "Usage Alerts & Limits",
+        "security": "Security & Account Updates",
+        "system": "System Maintenance",
+        "feature": "New Features & Updates"
+      },
+      "push": {
+        "title": "Push Notifications",
+        "billing": "Billing & Payment Updates",
+        "usage": "Usage Alerts & Limits",
+        "security": "Security & Account Updates",
+        "system": "System Maintenance",
+        "feature": "New Features & Updates"
+      }
+    },
+    "priority": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "messages": {
+      "paymentSuccessful": "Your Pro Pack purchase of $39.99 has been processed successfully. 5,000 credits have been added to your account.",
+      "lowCreditBalance": "Your credit balance is running low (1,250 credits remaining). Consider purchasing more credits to avoid service interruption.",
+      "systemMaintenance": "Scheduled maintenance has been completed. All services are now fully operational with improved performance.",
+      "newFeature": "We've added advanced analytics to your dashboard. Check out the new insights and reporting features.",
+      "loginNewDevice": "We detected a login from a new device (Chrome on Windows). If this wasn't you, please secure your account immediately.",
+      "invoiceAvailable": "Your monthly invoice for December 2024 is now available for download in your billing section."
+    },
+    "empty": {
+      "title": "No notifications",
+      "subtitle": "You're all caught up! Check back later for updates."
+    }
+  },
+  "support": {
+    "title": "AI Support Assistant",
+    "subtitle": "Get instant help with our voice-powered AI assistant",
+    "callStatus": {
+      "ready": "Ready to Connect",
+      "connecting": "Connecting...",
+      "connected": "Connected",
+      "ended": "Call Ended",
+      "failed": "Failed to start call"
+    },
+    "controls": {
+      "startCall": "Start Voice Call",
+      "endCall": "End Call",
+      "mute": "Mute",
+      "unmute": "Unmute",
+      "clearConversation": "Clear Conversation"
+    },
+    "messages": {
+      "welcome": "Hi! I'm your AI travel assistant. How can I help you today?",
+      "microphoneMuted": "Microphone muted",
+      "microphoneUnmuted": "Microphone unmuted",
+      "configurationError": "Vapi Assistant ID is not configured. Please check your environment variables.",
+      "callDuration": "Call Duration"
+    },
+    "status": {
+      "listening": "Listening...",
+      "processing": "Processing...",
+      "speaking": "Speaking...",
+      "idle": "Ready"
+    }
+  },
+  "builder": {
+    "modal": {
+      "title": "Let's Plan Your Adventure!",
+      "subtitle": "Tell us about your trip to get personalized recommendations",
+      "travelStyleHeader": "Travel Style",
+      "interestsHeader": "What interests you? (Select multiple)",
+      "budgetLabel": "Budget (DZD) - Optional",
+      "budgetPlaceholder": "e.g., 50000",
+      "durationLabel": "Duration (days) - Optional",
+      "durationPlaceholder": "e.g., 7",
+      "startDateLabel": "Start Date - Optional",
+      "startBuildingButton": "Start Building My Trip",
+      "skipButton": "Skip & Start Empty",
+      "validation": {
+        "selectInterest": "Please select at least one interest"
+      },
+      "travelStyles": {
+        "budget": {
+          "name": "Budget Traveler",
+          "description": "Basic accommodation, local transport"
+        },
+        "standard": {
+          "name": "Standard",
+          "description": "Comfortable hotels, mixed transport"
+        },
+        "premium": {
+          "name": "Premium",
+          "description": "Luxury hotels, private transport"
+        },
+        "luxury": {
+          "name": "Luxury",
+          "description": "Exclusive resorts, first-class everything"
+        }
+      },
+      "interests": {
+        "adventure": "Adventure",
+        "culture": "Culture",
+        "food": "Food",
+        "nature": "Nature",
+        "history": "History",
+        "beaches": "Beaches",
+        "nightlife": "Nightlife",
+        "shopping": "Shopping"
+      },
+      "form": {
+        "destination": "Where would you like to go?",
+        "destinationPlaceholder": "Search destinations...",
+        "startDate": "When would you like to start?",
+        "duration": "How long is your trip?",
+        "durationUnit": "days",
+        "interests": "What interests you?",
+        "startPlanning": "Start Planning",
+        "skip": "Skip & Explore"
+      }
+    },
+    "quote": {
+      "subtotal": "Subtotal",
+      "totalFinal": "Total Final",
+      "promoCode": "Promo Code",
+      "apply": "Apply",
+      "discount": "Discount",
+      "invalidPromoCode": "Invalid promo code.",
+      "promoApplied": "Promo code applied successfully!"
+    },
+    "destination": {
+      "selectDestination": "Select Destination",
+      "chooseDestination": "Choose destination...",
+      "duration": "Duration (days)",
+      "hotel": "Hotel",
+      "chooseHotel": "Choose hotel...",
+      "activities": "Activities",
+      "weather": "Weather",
+      "visa": "Visa",
+      "loading": "Loading...",
+      "unavailable": "Unavailable",
+      "addNextDestination": "Add Next Destination"
+    },
+    "destinationPicker": {
+      "title": "Choose Your Destination",
+      "subtitle": "Select from {{count}} amazing destinations worldwide",
+      "searchPlaceholder": "Search destinations or countries...",
+      "allContinents": "All Continents",
+      "map": "Map",
+      "list": "List",
+      "daysRecommended": "days recommended",
+      "description": "Description",
+      "popularActivities": "Popular Activities",
+      "bestTimeToVisit": "Best Time to Visit",
+      "recommendedStay": "Recommended stay",
+      "days": "days",
+      "selected": "Selected",
+      "selectDestination": "Select a destination to continue",
+      "cancel": "Cancel",
+      "confirmSelection": "Confirm Selection"
+    },
+    "transport": {
+      "flight": "Flight",
+      "train": "Train",
+      "car": "Car",
+      "bus": "Bus"
+    },
+    "tripHud": {
+      "tripSummary": "Trip Summary",
+      "tripStartDate": "Trip Start Date",
+      "destinations": "Destinations",
+      "totalDays": "Total Days",
+      "avgDailyCost": "Avg. Daily Cost",
+      "breakdown": "Cost Breakdown",
+      "hotels": "Hotels",
+      "nights": "nights",
+      "transport": "Transport",
+      "subtotal": "Subtotal",
+      "promoCode": "Promo Code",
+      "apply": "Apply",
+      "invalidCode": "Invalid promo code",
+      "discountApplied": "discount applied!",
+      "total": "Total",
+      "perDay": "Per Day",
+      "share": "Share",
+      "save": "Save",
+      "saving": "Saving...",
+      "shareSuccess": "Trip link copied to clipboard! 🎉",
+      "saveSuccess": "Trip saved successfully! ✅"
+    },
+    "modal": {
+      "title": "Let's Plan Your Adventure!",
+      "subtitle": "Tell us about your trip to get personalized recommendations",
+      "travelStyleHeader": "Travel Style",
+      "interestsHeader": "What interests you? (Select multiple)",
+      "budgetLabel": "Budget (DZD) - Optional",
+      "budgetPlaceholder": "e.g., 50000",
+      "durationLabel": "Duration (days) - Optional",
+      "durationPlaceholder": "e.g., 7",
+      "startDateLabel": "Start Date - Optional",
+      "startBuildingButton": "Start Building My Trip",
+      "skipButton": "Skip & Start Empty",
+      "validation": {
+        "selectInterest": "Please select at least one interest"
+      },
+      "travelStyles": {
+        "budget": {
+          "name": "Budget Traveler",
+          "description": "Basic accommodation, local transport"
+        },
+        "standard": {
+          "name": "Standard",
+          "description": "Comfortable hotels, mixed transport"
+        },
+        "premium": {
+          "name": "Premium",
+          "description": "Luxury hotels, private transport"
+        },
+        "luxury": {
+          "name": "Luxury",
+          "description": "Exclusive resorts, first-class everything"
+        }
+      },
+      "interests": {
+        "adventure": "Adventure",
+        "culture": "Culture",
+        "food": "Food",
+        "nature": "Nature",
+        "history": "History",
+        "beaches": "Beaches",
+        "nightlife": "Nightlife",
+        "shopping": "Shopping"
+      },
+      "form": {
+        "destination": "Where would you like to go?",
+        "destinationPlaceholder": "Search destinations...",
+        "startDate": "When would you like to start?",
+        "duration": "How long is your trip?",
+        "durationUnit": "days",
+        "interests": "What interests you?",
+        "startPlanning": "Start Planning",
+        "skip": "Skip & Explore"
+      }
+    },
+    "booking": {
+      "title": "Book Your Trip",
+      "summary": "Trip Summary",
+      "travelerInfo": "Traveler Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "paymentInfo": "Payment Information",
+      "cardNumber": "Card Number",
+      "expiryDate": "Expiry Date",
+      "cvv": "CVV",
+      "billingAddress": "Billing Address",
+      "address": "Address",
+      "city": "City",
+      "zipCode": "ZIP Code",
+      "country": "Country",
+      "bookNow": "Book Now",
+      "totalAmount": "Total Amount",
+      "processing": "Processing...",
+      "close": "Close"
+    },
+    "page": {
+      "title": "Trip Builder",
+      "subtitle": "Design your perfect journey",
+      "controls": {
+        "save": "Save Trip",
+        "share": "Share Trip",
+        "reset": "Reset",
+        "addDestination": "Add Destination",
+        "startDate": "Trip Start Date",
+        "shareSuccess": "Trip shared successfully! Link copied to clipboard.",
+        "saveSuccess": "Trip saved successfully!",
+        "saveError": "Failed to save trip. Please try again.",
+        "saving": "Saving..."
+      }
+    }
+  },
+  "marketplace": {
+    "title": "Extraordinary Travel Experiences",
+    "subtitle": "Join curated adventures led by local experts, or build your perfect journey with our custom travel architects",
+    "exploreMap": "Explore Map",
+    "discoverMore": "Discover More Experiences",
+    "search": {
+      "placeholder": "Find your next adventure by destination or experience type..."
+    },
+    "filters": {
+      "advanced": "Advanced Filters",
+      "title": "Filter Options",
+      "resetAll": "Reset All",
+      "location": "Location",
+      "selectCountry": "Select country",
+      "allCountries": "All Countries",
+      "duration": "Trip Duration",
+      "selectDuration": "Select duration",
+      "anyDuration": "Any Duration",
+      "short": "Short (1-3 days)",
+      "medium": "Medium (4-7 days)",
+      "long": "Long (8+ days)",
+      "minimumRating": "Minimum Rating",
+      "selectRating": "Select rating",
+      "anyRating": "Any Rating",
+      "fourStars": "4+ Stars",
+      "fourHalfStars": "4.5+ Stars",
+      "fourEightStars": "4.8+ Stars",
+      "apply": "Apply Filters"
+    },
+    "tabs": {
+      "allExperiences": "All Experiences",
+      "expertLed": "Expert-Led",
+      "buildYourOwn": "Build Your Own"
+    },
+    "activeFilters": {
+      "search": "Search",
+      "country": "Country",
+      "duration": "Duration",
+      "rating": "Rating",
+      "stars": "stars",
+      "price": "Price"
+    },
+    "results": {
+      "showing": "Showing",
+      "of": "of",
+      "experiences": "experiences",
+      "filteredBy": "filtered by",
+      "criteria": "criteria"
+    },
+    "noResults": {
+      "title": "No matching experiences found",
+      "description": "Try broadening your search or adjusting your filters to find more options",
+      "clearFilters": "Clear All Filters"
+    }
+  },
+  "booking": {
+    "title": "Book Your Voyage",
+    "steps": {
+      "idUpload": {
+        "title": "Upload ID Document",
+        "description": "Please upload a valid government-issued ID for verification",
+        "documentLabel": "ID Document *",
+        "clickToUpload": "Click to upload",
+        "orDragDrop": "or drag and drop",
+        "fileTypes": "PNG, JPG or PDF (MAX. 10MB)"
+      },
+      "peopleCount": {
+        "title": "How many people?",
+        "description": "Select the number of travelers for this voyage",
+        "label": "Number of People",
+        "placeholder": "Select number of people",
+        "person": "Person",
+        "people": "People",
+        "specialRequests": "Special Requests (Optional)",
+        "specialRequestsPlaceholder": "Any dietary restrictions, accessibility needs, or special occasions..."
+      },
+      "payment": {
+        "title": "Payment Information",
+        "description": "Enter your payment details to complete the booking"
+      }
+    },
+    "personalInfo": {
+      "firstName": "First Name *",
+      "firstNamePlaceholder": "John",
+      "lastName": "Last Name *",
+      "lastNamePlaceholder": "Doe",
+      "email": "Email Address *",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 (555) 123-4567"
+    },
+    "payment": {
+      "cardholderName": "Cardholder Name *",
+      "cardholderNamePlaceholder": "John Doe",
+      "cardNumber": "Card Number *",
+      "cardNumberPlaceholder": "1234 5678 9012 3456",
+      "expiryDate": "Expiry Date *",
+      "expiryDatePlaceholder": "MM/YY",
+      "cvv": "CVV *",
+      "cvvPlaceholder": "123",
+      "totalAmount": "Total Amount",
+      "travelers": "travelers",
+      "securityNote": "Your payment is secured with 256-bit SSL encryption. You will receive a confirmation email after successful payment."
+    },
+    "priceBreakdown": {
+      "title": "Price Breakdown",
+      "taxesFees": "Taxes & Fees",
+      "total": "Total"
+    },
+    "confirmation": {
+      "title": "Booking Confirmed!",
+      "subtitle": "Your voyage has been successfully booked",
+      "detailsTitle": "Booking Details",
+      "voyage": "Voyage",
+      "travelers": "Travelers",
+      "people": "people",
+      "totalPaid": "Total Paid",
+      "bookingId": "Booking ID",
+      "emailSent": "A confirmation email has been sent to"
+    },
+    "buttons": {
+      "back": "Back",
+      "close": "Close",
+      "continue": "Continue",
+      "processing": "Processing...",
+      "pay": "Pay",
+      "completeBooking": "Complete Booking"
+    }
+  }
+}

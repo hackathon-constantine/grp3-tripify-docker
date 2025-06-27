@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package document_service;
+
+service DocumentService {
+
+  rpc UploadDocument (stream UploadDocumentRequest) returns (UploadDocumentResponse);
+  rpc GetDocumentInfo (GetDocumentInfoRequest) returns (GetDocumentInfoResponse);
+}
+option go_package = "github.com/wailbentafat/fabrid_service/proto";
+message FileChunk {
+  bytes content = 1; 
+}
+
+message UploadDocumentRequest {
+  string document_id = 1;
+  string user_id = 2;
+  string file_name = 3;
+  string file_type = 4; 
+ 
+  bytes chunk_data = 5;
+}
+
+message UploadDocumentResponse {
+  bool success = 1;
+  string message = 2;
+  string document_hash = 3;     
+  string off_chain_url = 4;      
+  string transaction_id = 5;     
+  string error = 6;             
+}
+
+message GetDocumentInfoRequest {
+  string document_id = 1;
+}
+
+message GetDocumentInfoResponse {
+  bool found = 1;
+  string document_id = 2;
+  string document_hash = 3;
+  string off_chain_url = 4;
+  string user_id = 5;
+  string file_name = 6;
+  string file_type = 7;
+}

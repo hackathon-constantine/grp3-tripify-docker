@@ -1,0 +1,144 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: smart-travel-postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.4.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+    restart: always
+
+  kafka:
+    image: confluentinc/cp-kafka:7.4.0
+    container_name: kafka
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+    ports:
+      - "9092:9092"
+      - "9094:9094" 
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:9094
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    restart: always
+
+  redis:
+    image: redis:7-alpine
+    container_name: smart-travel-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: always
+
+  # crud-service:
+  #   build:
+  #     context: ./smart_travel_agency/apps/crud_service
+  #     dockerfile: Dockerfile
+  #   container_name: smart-travel-crud-service
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     DB_HOST: postgres
+  #     DB_PORT: 5432
+  #     DB_NAME: ${DB_NAME}
+  #     DB_USER: ${DB_USER}
+  #     DB_PASSWORD: ${DB_PASSWORD}
+  #     KAFKA_BROKERS: kafka:9092
+  #     REDIS_HOST: redis 
+  #     REDIS_PORT: 6379 
+  #     AI_SERVICE_URL: http://ai-service:8000
+  #   depends_on:
+  #     postgres:
+  #       condition: service_healthy
+  #     kafka:
+  #       condition: service_started
+  #     redis: 
+  #       condition: service_started
+  #   volumes:
+  #     - ./smart_travel_agency/apps/crud_service:/app
+  #     - /app/node_modules
+  #   restart: always
+
+  ai-service:
+    build:
+      context: ./smart_travel_agency/apps/AI_Service
+      dockerfile: Dockerfile
+    container_name: smart-travel-ai-service
+    ports:
+      - "8000:8000"
+    environment:
+      KAFKA_BROKERS: kafka:9092
+      REDIS_HOST: redis 
+      REDIS_PORT: 6379 
+      CRUD_SERVICE_URL: http://crud-service:3000
+      DATABASE_URL: postgresql://${DB_USER}:${DB_PASSWORD}@postgres:5432/${DB_NAME}
+    depends_on:
+      kafka:
+        condition: service_started
+      crud-service:
+        condition: service_started
+      postgres: 
+        condition: service_healthy
+      redis: 
+        condition: service_started
+    volumes:
+      - ./smart_travel_agency/apps/AI_Service:/app
+      - /app/.venv
+    restart: always
+
+  frontend:
+    build:
+      context: ./smart_travel_agency/apps/frontend
+      dockerfile: Dockerfile
+    container_name: smart-travel-frontend
+    ports:
+      - "80:80"
+      - "3001:3001"
+    environment:
+      REACT_APP_API_URL: http://localhost:3000
+    depends_on:
+      crud-service:
+        # condition: service_started
+    volumes:
+      - ./smart_travel_agency/apps/frontend:/app
+      - /app/node_modules
+    restart: always
+
+  # mobile-builder:
+  #   build:
+  #     context: ./smart_travel_agency/apps/mobile
+  #     dockerfile: Dockerfile
+  #   container_name: smart-travel-mobile-builder
+  #   volumes:
+  #     - ./smart_travel_agency/apps/mobile:/app/mobile
+  #   restart: "no"
+
+volumes:
+  postgres_data:
+  redis_data: 

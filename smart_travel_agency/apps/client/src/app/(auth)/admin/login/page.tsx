@@ -1,0 +1,96 @@
+// app/(auth)/admin/login/page.tsx
+"use client";
+
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { useAuth } from '@/contexts/authContext';
+import { Card } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+
+export default function AdminLoginPage() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
+  
+  const { adminLogin } = useAuth();
+  const router = useRouter();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError('');
+    
+    try {
+      await adminLogin(email, password);
+      router.push('/admin/dashboard'); // Redirect to admin dashboard
+    } catch (error: any) {
+      setError(error.message || 'Login failed. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-gray-50">
+      <Card className="w-full max-w-md p-8 space-y-6">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold">Admin Sign In</h1>
+          <p className="text-gray-600 mt-2">Enter your credentials to access the admin panel</p>
+        </div>
+        
+        {error && (
+          <div className="p-3 text-sm text-red-500 bg-red-50 rounded-md">
+            {error}
+          </div>
+        )}
+        
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="space-y-2">
+            <label className="text-sm font-medium" htmlFor="email">
+              Email
+            </label>
+            <Input 
+              id="email"
+              type="email" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="admin@example.com" 
+              required 
+            />
+          </div>
+          
+          <div className="space-y-2">
+            <label className="text-sm font-medium" htmlFor="password">
+              Password
+            </label>
+            <Input 
+              id="password"
+              type="password" 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="******" 
+              required 
+            />
+          </div>
+          
+          <Button 
+            type="submit" 
+            className="w-full bg-blue-600 hover:bg-blue-700" 
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Signing in...' : 'Sign In'}
+          </Button>
+        </form>
+        
+        <div className="text-center text-sm">
+          <Link href="/login" className="text-blue-600 hover:underline">
+            Back to regular login
+          </Link>
+        </div>
+      </Card>
+    </div>
+  );
+}

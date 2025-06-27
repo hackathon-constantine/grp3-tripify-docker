@@ -1,0 +1,159 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String        @id @default(uuid())
+  email        String        @unique
+  password     String
+  name         String?
+  role         UserRoles     @default(User)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  itineraries  Json
+  reservations Reservation[]
+  createdTrips Trip[]        @relation("CreatedTrips")
+}
+
+model Trip {
+  id             String            @id @default(uuid())
+  name           String            @unique
+  description    String
+  price          Int
+  duration       String
+  tags           String[]
+  season         String
+  imageUrl       String?
+  imagePublicId  String?
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  creatorId      String
+  isAgencyTrip   Boolean           @default(false)
+  itinaries      Json
+  shareableLink  String?
+  reservations   Reservation[]
+  createdBy      User              @relation("CreatedTrips", fields: [creatorId], references: [id])
+  availabilities TripAvailability?
+}
+
+model TripAvailability {
+  id             String   @id @default(uuid())
+  tripId         String   @unique
+  availableSeats Int      @default(0)
+  status         String
+  updatedAt      DateTime @updatedAt
+  trip           Trip     @relation(fields: [tripId], references: [id])
+}
+
+model Destination {
+  id            String   @id @default(uuid())
+  name          String   @unique
+  price         Int
+  description   String?
+  imageUrl      String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  imagePublicId String?
+  weatherData   Weather?
+}
+
+model Hotel {
+  id            String   @id @default(uuid())
+  name          String
+  price         Int
+  destinationId String?
+  stars         Int?
+  description   String?
+  imageUrl      String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  activities    String[]
+  imagePublicId String?
+}
+
+model Weather {
+  id            String      @id @default(uuid())
+  destinationId String      @unique
+  temperature   Int
+  condition     String
+  humidity      String
+  updatedAt     DateTime    @updatedAt
+  destination   Destination @relation(fields: [destinationId], references: [id])
+}
+
+model Reservation {
+  id               String            @id @default(uuid())
+  full_name        String
+  email            String
+  number_of_people Int
+  status           ReservationStatus @default(PENDING)
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  userId           String?
+  tripId           String
+  promoCodeId      String?
+  imagePublicId    String?
+  imageUrl         String?
+  payment          Payment?
+  promoCode        PromoCode?        @relation(fields: [promoCodeId], references: [id])
+  trip             Trip              @relation(fields: [tripId], references: [id])
+  user             User?             @relation(fields: [userId], references: [id])
+}
+
+model Payment {
+  id                    String        @id @default(uuid())
+  amount                Decimal       @db.Decimal(10, 2)
+  payment_method        String
+  status                PaymentStatus @default(PENDING)
+  transaction_reference String?
+  paid_at               DateTime?
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+  reservationId         String        @unique
+  reservation           Reservation   @relation(fields: [reservationId], references: [id])
+}
+
+model PromoCode {
+  id                  String        @id @default(uuid())
+  code                String        @unique
+  discount_percentage Decimal       @db.Decimal(5, 2)
+  valid_until         DateTime
+  usage_limit         Int
+  times_used          Int           @default(0)
+  createdAt           DateTime      @default(now())
+  updatedAt           DateTime      @updatedAt
+  reservations        Reservation[]
+}
+
+model SupportMessage {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  subject   String
+  message   String
+  status    String   @default("new")
+  createdAt DateTime @default(now())
+}
+
+enum UserRoles {
+  User
+  Vendeur
+  Admin
+}
+
+enum ReservationStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+}
+
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+}

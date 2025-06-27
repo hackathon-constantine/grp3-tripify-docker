@@ -1,0 +1,54 @@
+version: '3.8'
+
+# Development overrides for docker-compose.yml
+# Usage: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+
+services:
+  server:
+    volumes:
+      - ./smart_travel_agency/apps/server:/app
+      - /app/node_modules
+      - /app/dist
+    environment:
+      NODE_ENV: development
+    command: ["npm", "run", "start:dev"]
+
+  admin:
+    volumes:
+      - ./smart_travel_agency/apps/admin:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      NODE_ENV: development
+    command: ["npm", "run", "dev"]
+
+  client:
+    volumes:
+      - ./smart_travel_agency/apps/client:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      NODE_ENV: development
+    command: ["npm", "run", "dev"]
+
+  frontend:
+    volumes:
+      - ./smart_travel_agency/apps/frontend:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      NODE_ENV: development
+    command: ["npm", "run", "dev"]
+
+  tools-service:
+    volumes:
+      - ./smart_travel_agency/apps/tools-main:/app
+    environment:
+      NODE_ENV: development
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+  fabrid-service:
+    volumes:
+      - ./smart_travel_agency/apps/fabrid_service:/app
+    environment:
+      NODE_ENV: development

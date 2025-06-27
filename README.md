@@ -14,9 +14,6 @@ This application consists of multiple microservices that can be run using Docker
 
 ### Services Architecture
 - **PostgreSQL** (port 5432) - Main database
-- **Redis** (port 6379) - Caching and session storage
-- **Kafka** (port 9092) - Message broker
-- **Zookeeper** (port 2181) - Kafka coordinator
 - **Server** (port 3000) - NestJS backend API
 - **Admin** (port 3002) - Admin dashboard (Next.js)
 - **Client** (port 3003) - Client application (Next.js)
@@ -58,16 +55,6 @@ This application consists of multiple microservices that can be run using Docker
    ```bash
    docker-compose logs -f [service-name]
    ```
-
-### Service Health Checks
-The services include health checks to ensure proper startup order:
-- Database services start first
-- Backend services wait for database readiness  
-- Frontend services wait for backend readiness
-
-### Development
-For development with hot-reload, individual services can be run locally while using Docker for infrastructure services (postgres, redis, kafka).
-
 ### Troubleshooting
 - If containers fail to start, check available system resources
 - Ensure no other services are using the configured ports
